@@ -16,7 +16,7 @@
     var texto = WHATSAPP.mensagemPadrao;
     if (tipo === 'contato') texto = WHATSAPP.mensagemContato;
     else if (tipo) texto = WHATSAPP.mensagemServico.replace('{servico}', tipo.toLowerCase());
-    link.href = 'https://wa.me/' + WHATSAPP.numero + '?text=' + encodeURIComponent(texto);
+    link.href = 'https://api.whatsapp.com/send?phone=' + WHATSAPP.numero + '&text=' + encodeURIComponent(texto);
   });
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -14,7 +14,7 @@ ou publique a pasta em qualquer hospedagem estática (GitHub Pages, Netlify, Ver
 - **Fotos:** as imagens atuais são fotos de banco de imagens (Unsplash). Para usar as fotos reais, troque o `src`
   de cada `<img>` (e o `data-full` dos itens da galeria) pelos arquivos do cliente, por exemplo `img/interior.jpg`.
 - **Agendamento pelo WhatsApp:** todos os botões "Agendar horário", os "Conhecer" dos serviços, o "Entrar em contato"
-  e o botão flutuante abrem o WhatsApp com mensagem pronta. O número e os textos ficam no início de `js/main.js`
+  e o botão flutuante abrem o WhatsApp (api.whatsapp.com/send) com mensagem pronta. O número e os textos ficam no início de `js/main.js`
   (objeto `WHATSAPP`), no formato `55` + DDD + número.
 - **Instagram:** atualize o `href="#"` do ícone no rodapé.
 - **Serviços e preços:** cada card fica em `<article class="service">`, basta duplicar ou editar.
