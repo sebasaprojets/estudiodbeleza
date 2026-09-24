@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espaço Vip Studio de Beleza | Guabirotuba, Curitiba</title>
+  <meta name="description" content="Espaço Vip Studio de Beleza: cabelo, unhas, maquiagem e estética em Guabirotuba, Curitiba - PR. Atendimento personalizado em um ambiente sofisticado.">
+  <meta name="theme-color" content="#0e0d0c">
+
+  <meta property="og:title" content="Espaço Vip Studio de Beleza">
+  <meta property="og:description" content="Beleza que valoriza quem você é. Guabirotuba, Curitiba - PR.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ícones SVG reutilizáveis -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></g></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 013 0V10M12 10V4.5a1.5 1.5 0 013 0V10M15 10V6.5a1.5 1.5 0 013 0V14a7 7 0 01-7 7h-.5a6.5 6.5 0 01-5.3-2.8L3.6 14.4a1.6 1.6 0 012.5-2L9 15V11"/><path d="M10.5 3.2c0-.8.7-1.2 1.5-1.2s1.5.4 1.5 1.2"/></g></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M18.4 2.6a2 2 0 012.9 2.9L12 14.8 9.2 12z"/><path d="M9.2 12C6.5 12 5 14 5 16c0 1.5-1 2.5-2 3 1.5 1.5 3.5 2 5.5 2 3 0 5.2-2.2 5.2-5.2z"/></g></symbol>
+    <symbol id="i-lotus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20c-3-2-4.5-5-4.5-8.5S9.5 5 12 3c2.5 2 4.5 5 4.5 8.5S15 18 12 20z"/><path d="M12 20c-4 0-8-2.5-9-7 2.5-.5 4.5 0 6 1M12 20c4 0 8-2.5 9-7-2.5-.5-4.5 0-6 1"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M21 16.5v3a2 2 0 01-2.2 2A19.8 19.8 0 012.5 5.2 2 2 0 014.5 3h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.4 10.9a16 16 0 006.7 6.7l1.3-1.3a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></g></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-chev-l" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 32 32"><path fill="currentColor" d="M13 8C7.5 9.6 4 14 4 19.5 4 23 6.2 25 9 25c2.6 0 4.5-1.9 4.5-4.4 0-2.4-1.8-4.2-4.1-4.2-.5 0-.9.1-1.2.2.6-2.9 2.9-5.4 5.8-6.6zm14 0c-5.5 1.6-9 6-9 11.5 0 3.5 2.2 5.5 5 5.5 2.6 0 4.5-1.9 4.5-4.4 0-2.4-1.8-4.2-4.1-4.2-.5 0-.9.1-1.2.2.6-2.9 2.9-5.4 5.8-6.6z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#inicio" class="logo" aria-label="Espaço Vip Studio de Beleza - início">
+        <span class="logo__name">ESPAÇO VIP</span>
+        <span class="logo__sub">STUDIO DE BELEZA</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li><a href="#avaliacoes" class="nav__link">Avaliações</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="#contato" class="btn btn--gold nav__cta">Agendar horário</a>
+        <div class="nav__foot">
+          <a href="tel:+554132037293">(41) 3203-7293</a>
+          <span>Guabirotuba — Curitiba/PR</span>
+        </div>
+      </nav>
+
+      <a href="#contato" class="btn btn--outline-light header__cta">Agendar horário</a>
+
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=2200&q=80"
+             alt="Interior sofisticado de studio de beleza" fetchpriority="high">
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content container">
+        <p class="eyebrow hero__anim" style="--d:.2s">
+          <span class="eyebrow__line"></span> Guabirotuba · Curitiba
+        </p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span style="--d:.35s">Beleza que</span></span>
+          <span class="hero__line"><span style="--d:.5s"><em>valoriza</em> quem</span></span>
+          <span class="hero__line"><span style="--d:.65s">você é</span></span>
+        </h1>
+        <p class="hero__text hero__anim" style="--d:.9s">Um espaço dedicado ao cuidado, à beleza e à sua melhor versão.</p>
+        <div class="hero__actions hero__anim" style="--d:1.05s">
+          <a href="#contato" class="btn btn--gold">Agendar horário</a>
+          <a href="#sobre" class="btn btn--ghost-light">Conhecer o espaço</a>
+        </div>
+        <a href="#avaliacoes" class="rating-pill hero__anim" style="--d:1.25s">
+          <svg class="rating-pill__star"><use href="#i-star"/></svg>
+          <strong>4,7</strong>
+          <span class="rating-pill__sep"></span>
+          <span>124 avaliações no Google</span>
+        </a>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+        <span>Role</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="about__frame"></div>
+          <div class="img-wrap about__img">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80"
+                 alt="Ambiente interno do studio de beleza" loading="lazy">
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-num">4,7</span>
+            <span class="about__badge-stars" aria-hidden="true">
+              <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+            </span>
+            <span class="about__badge-txt">Nota no Google</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span> Sobre o espaço</p>
+          <h2 class="h2 reveal">Mais do que beleza.<br><em>Uma experiência.</em></h2>
+          <p class="lead reveal">O Espaço Vip Studio de Beleza foi pensado para proporcionar uma experiência especial de cuidado, beleza e bem-estar, com atenção aos detalhes e atendimento personalizado.</p>
+
+          <ul class="features">
+            <li class="feature reveal"><span class="feature__num">01</span><span>Atendimento personalizado</span></li>
+            <li class="feature reveal"><span class="feature__num">02</span><span>Ambiente sofisticado</span></li>
+            <li class="feature reveal"><span class="feature__num">03</span><span>Cuidado em cada detalhe</span></li>
+            <li class="feature reveal"><span class="feature__num">04</span><span>Profissionais especializados</span></li>
+          </ul>
+
+          <a href="#servicos" class="link-arrow reveal">Ver nossos cuidados <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span> Serviços</p>
+          <h2 class="h2 reveal">Nossos <em>cuidados</em></h2>
+          <p class="section-head__sub reveal">Tudo para você se sentir ainda mais incrível.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service reveal">
+            <div class="service__media img-wrap">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" alt="Profissional finalizando corte de cabelo" loading="lazy">
+            </div>
+            <div class="service__body">
+              <span class="service__icon"><svg><use href="#i-scissors"/></svg></span>
+              <span class="service__index">01</span>
+              <h3 class="service__title">Cabelo</h3>
+              <p class="service__text">Cortes, coloração, mechas e tratamentos.</p>
+              <a href="#contato" class="service__link">Conhecer <svg><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__media img-wrap">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="Unhas feitas com esmaltação delicada" loading="lazy">
+            </div>
+            <div class="service__body">
+              <span class="service__icon"><svg><use href="#i-hand"/></svg></span>
+              <span class="service__index">02</span>
+              <h3 class="service__title">Unhas</h3>
+              <p class="service__text">Manicure, pedicure e cuidados especiais.</p>
+              <a href="#contato" class="service__link">Conhecer <svg><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__media img-wrap">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80" alt="Maquiagem para evento especial" loading="lazy">
+            </div>
+            <div class="service__body">
+              <span class="service__icon"><svg><use href="#i-brush"/></svg></span>
+              <span class="service__index">03</span>
+              <h3 class="service__title">Maquiagem</h3>
+              <p class="service__text">Produções para eventos e momentos especiais.</p>
+              <a href="#contato" class="service__link">Conhecer <svg><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__media img-wrap">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" alt="Tratamento facial de estética" loading="lazy">
+            </div>
+            <div class="service__body">
+              <span class="service__icon"><svg><use href="#i-lotus"/></svg></span>
+              <span class="service__index">04</span>
+              <h3 class="service__title">Estética</h3>
+              <p class="service__text">Cuidados faciais e corporais.</p>
+              <a href="#contato" class="service__link">Conhecer <svg><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAL -->
+    <section class="section stats" aria-labelledby="stats-title">
+      <div class="stats__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="stats__head">
+          <p class="eyebrow eyebrow--light reveal"><span class="eyebrow__line"></span> Nosso diferencial</p>
+          <h2 class="h2 h2--light reveal" id="stats-title">Seu momento.<br><em>Seu espaço.</em></h2>
+        </div>
+
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="4.7" data-decimals="1">4,7</span><svg class="stat__star"><use href="#i-star"/></svg></span>
+            <span class="stat__label">Avaliação</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="124">124</span>+</span>
+            <span class="stat__label">Avaliações</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value">VIP</span>
+            <span class="stat__label">Experiência</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__value"><span data-count="100">100</span>%</span>
+            <span class="stat__label">Dedicação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow__line"></span> Galeria</p>
+            <h2 class="h2 reveal">Conheça o <em>Espaço Vip</em></h2>
+          </div>
+          <p class="section-head__sub reveal">Um ambiente criado para que cada visita seja um momento só seu.</p>
+        </div>
+
+        <div class="gallery__grid" id="gallery">
+          <button class="g-item g-item--a reveal" data-full="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=2000&q=85" data-caption="Interior">
+            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1100&q=80" alt="Interior do studio" loading="lazy">
+            <span class="g-item__cap"><span>Interior</span><svg><use href="#i-plus"/></svg></span>
+          </button>
+          <button class="g-item g-item--b reveal" data-full="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=2000&q=85" data-caption="Manicure">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=80" alt="Manicure" loading="lazy">
+            <span class="g-item__cap"><span>Manicure</span><svg><use href="#i-plus"/></svg></span>
+          </button>
+          <button class="g-item g-item--c reveal" data-full="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2000&q=85" data-caption="Cabelo">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Cuidados com o cabelo" loading="lazy">
+            <span class="g-item__cap"><span>Cabelo</span><svg><use href="#i-plus"/></svg></span>
+          </button>
+          <button class="g-item g-item--d reveal" data-full="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=2000&q=85" data-caption="Maquiagem">
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=80" alt="Pincéis e produtos de maquiagem" loading="lazy">
+            <span class="g-item__cap"><span>Maquiagem</span><svg><use href="#i-plus"/></svg></span>
+          </button>
+          <button class="g-item g-item--e reveal" data-full="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=2000&q=85" data-caption="Ambiente">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1100&q=80" alt="Ambiente do studio" loading="lazy">
+            <span class="g-item__cap"><span>Ambiente</span><svg><use href="#i-plus"/></svg></span>
+          </button>
+          <button class="g-item g-item--f reveal" data-full="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=2000&q=85" data-caption="Detalhes">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80" alt="Detalhes e produtos do studio" loading="lazy">
+            <span class="g-item__cap"><span>Detalhes</span><svg><use href="#i-plus"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="experience" aria-labelledby="exp-title">
+      <div class="experience__media img-wrap">
+        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=2200&q=80" alt="Momento de cuidado em ambiente de beleza" loading="lazy" data-parallax>
+      </div>
+      <div class="container experience__inner">
+        <div class="experience__box reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span> A experiência</p>
+          <h2 class="h2" id="exp-title">Cada detalhe faz parte da <em>experiência.</em></h2>
+          <ul class="experience__list">
+            <li><span>Cuidado</span></li>
+            <li><span>Beleza</span></li>
+            <li><span>Confiança</span></li>
+            <li><span>Experiência</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="section reviews" id="avaliacoes">
+      <div class="container">
+        <div class="reviews__summary reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Avaliações <span class="eyebrow__line"></span></p>
+          <div class="reviews__score">4,7</div>
+          <div class="reviews__stars" aria-label="4,7 de 5 estrelas">
+            <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg class="is-partial"><use href="#i-star"/></svg>
+          </div>
+          <p class="reviews__count">124 avaliações no Google</p>
+        </div>
+
+        <div class="reviews__grid">
+          <figure class="review reveal">
+            <svg class="review__quote"><use href="#i-quote"/></svg>
+            <blockquote>Um lugar incrível, muito bem organizado e com atendimento excelente.</blockquote>
+            <figcaption>
+              <span class="review__stars" aria-label="5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+              <span class="review__src">Avaliação no Google</span>
+            </figcaption>
+          </figure>
+          <figure class="review review--featured reveal">
+            <svg class="review__quote"><use href="#i-quote"/></svg>
+            <blockquote>Frequento o espaço há bastante tempo e sempre saio muito satisfeito.</blockquote>
+            <figcaption>
+              <span class="review__stars" aria-label="5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+              <span class="review__src">Avaliação no Google</span>
+            </figcaption>
+          </figure>
+          <figure class="review reveal">
+            <svg class="review__quote"><use href="#i-quote"/></svg>
+            <blockquote>Atendimento impecável e muita atenção aos detalhes.</blockquote>
+            <figcaption>
+              <span class="review__stars" aria-label="5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+              <span class="review__src">Avaliação no Google</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAMADA FINAL -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta__media">
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=2200&q=80" alt="" loading="lazy" data-parallax>
+      </div>
+      <div class="cta__overlay"></div>
+      <div class="container cta__inner">
+        <p class="eyebrow eyebrow--light reveal"><span class="eyebrow__line"></span> Agende sua visita <span class="eyebrow__line"></span></p>
+        <h2 class="cta__title reveal" id="cta-title">Seu próximo momento de beleza <em>começa aqui.</em></h2>
+        <p class="cta__text reveal">Descubra uma experiência pensada para você.</p>
+        <a href="tel:+554132037293" class="btn btn--gold btn--lg reveal">Agendar horário</a>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section location" id="contato">
+      <div class="container location__grid">
+        <div class="location__info">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span> Contato</p>
+          <h2 class="h2 reveal">Onde <em>estamos</em></h2>
+
+          <ul class="contact-list">
+            <li class="reveal">
+              <span class="contact-list__icon"><svg><use href="#i-pin"/></svg></span>
+              <div>
+                <span class="contact-list__label">Endereço</span>
+                <span>Rua Alcides Therézio de Carvalho, 87<br>Guabirotuba — Curitiba/PR</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="contact-list__icon"><svg><use href="#i-phone"/></svg></span>
+              <div>
+                <span class="contact-list__label">Telefone</span>
+                <a href="tel:+554132037293">(41) 3203-7293</a>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="contact-list__icon"><svg><use href="#i-clock"/></svg></span>
+              <div>
+                <span class="contact-list__label">Horário</span>
+                <span>Atendimento com hora marcada</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="location__actions reveal">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Alcides+Ther%C3%A9zio+de+Carvalho%2C+87%2C+Guabirotuba%2C+Curitiba+-+PR" target="_blank" rel="noopener" class="btn btn--dark">Como chegar</a>
+            <a href="tel:+554132037293" class="btn btn--outline-dark">Entrar em contato</a>
+          </div>
+        </div>
+
+        <div class="map reveal">
+          <iframe
+            title="Mapa: Rua Alcides Therézio de Carvalho, 87 - Guabirotuba, Curitiba"
+            src="https://www.google.com/maps?q=Rua+Alcides+Ther%C3%A9zio+de+Carvalho,+87,+Guabirotuba,+Curitiba+-+PR&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map__card">
+            <span class="map__card-icon"><svg><use href="#i-pin"/></svg></span>
+            <div>
+              <strong>Espaço Vip Studio de Beleza</strong>
+              <span>Guabirotuba · Curitiba</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#inicio" class="logo logo--light">
+            <span class="logo__name">ESPAÇO VIP</span>
+            <span class="logo__sub">STUDIO DE BELEZA</span>
+          </a>
+          <p>Beleza que valoriza quem você é.</p>
+          <!-- Substituir pelo link oficial do Instagram do cliente -->
+          <a href="#" class="footer__social" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+        </div>
+
+        <nav class="footer__col" aria-label="Links do rodapé">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h3>Contato</h3>
+          <ul>
+            <li>Rua Alcides Therézio de Carvalho, 87</li>
+            <li>Guabirotuba — Curitiba/PR</li>
+            <li><a href="tel:+554132037293">(41) 3203-7293</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--cta">
+          <h3>Agende seu horário</h3>
+          <p>Reserve um momento para você.</p>
+          <a href="tel:+554132037293" class="btn btn--gold">Agendar horário</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Espaço Vip Studio de Beleza</span>
+        <a href="#inicio" class="footer__top-link">Voltar ao topo <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" hidden>
+    <button class="lightbox__btn lightbox__close" aria-label="Fechar"><svg><use href="#i-close"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" aria-label="Imagem anterior"><svg><use href="#i-chev-l"/></svg></button>
+    <figure class="lightbox__figure">
+      <img src="" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__next" aria-label="Próxima imagem"><svg><use href="#i-chev-r"/></svg></button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
