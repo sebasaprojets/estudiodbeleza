@@ -1,6 +1,24 @@
 (function () {
   'use strict';
 
+  /* ------------------------------------------------------------------
+     WhatsApp: troque aqui o número (com 55 + DDD) e as mensagens prontas
+     ------------------------------------------------------------------ */
+  var WHATSAPP = {
+    numero: '554132037293',
+    mensagemPadrao: 'Olá! Vim pelo site e gostaria de agendar um horário no Espaço Vip Studio de Beleza.',
+    mensagemServico: 'Olá! Vim pelo site e gostaria de agendar um horário para {servico} no Espaço Vip Studio de Beleza.',
+    mensagemContato: 'Olá! Vim pelo site do Espaço Vip Studio de Beleza e gostaria de mais informações.'
+  };
+
+  document.querySelectorAll('[data-wa]').forEach(function (link) {
+    var tipo = link.getAttribute('data-wa');
+    var texto = WHATSAPP.mensagemPadrao;
+    if (tipo === 'contato') texto = WHATSAPP.mensagemContato;
+    else if (tipo) texto = WHATSAPP.mensagemServico.replace('{servico}', tipo.toLowerCase());
+    link.href = 'https://wa.me/' + WHATSAPP.numero + '?text=' + encodeURIComponent(texto);
+  });
+
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var header = document.getElementById('header');
   var burger = document.getElementById('burger');

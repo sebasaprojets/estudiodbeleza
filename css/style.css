@@ -640,6 +640,36 @@ svg { width: 1em; height: 1em; flex-shrink: 0; }
 .footer__top-link svg { transform: rotate(-90deg); width: 16px; height: 16px; }
 .footer__top-link:hover { color: var(--on-terra); }
 
+/* ---------- WhatsApp flutuante ---------- */
+.wa-float {
+  position: fixed; right: 24px; bottom: 24px; z-index: 90;
+  display: inline-flex; align-items: center; gap: 0;
+  height: 60px; padding: 0 18px;
+  border-radius: 999px;
+  background: var(--terra);
+  color: var(--on-terra);
+  box-shadow: 0 16px 34px -14px rgba(156, 74, 48, .85);
+  opacity: 0; transform: translateY(20px) scale(.9);
+  animation: waIn .8s 1.8s var(--ease-out) forwards;
+  transition: background-color var(--t) var(--ease), gap .45s var(--ease-out), box-shadow var(--t) var(--ease);
+}
+.wa-float svg { width: 26px; height: 26px; }
+.wa-float__label {
+  max-width: 0; overflow: hidden; white-space: nowrap;
+  font-size: 11.5px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  transition: max-width .45s var(--ease-out);
+}
+.wa-float:hover { background: var(--terra-deep); gap: 12px; }
+.wa-float:hover .wa-float__label { max-width: 240px; }
+.wa-float::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  box-shadow: 0 0 0 0 rgba(180, 89, 60, .5);
+  animation: waPulse 2.8s 3s infinite;
+}
+@keyframes waIn { to { opacity: 1; transform: none; } }
+@keyframes waPulse { 0% { box-shadow: 0 0 0 0 rgba(180,89,60,.45); } 70%, 100% { box-shadow: 0 0 0 16px rgba(180,89,60,0); } }
+body.is-locked .wa-float { opacity: 0 !important; pointer-events: none; }
+
 /* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed; inset: 0; z-index: 300;
@@ -824,6 +854,7 @@ svg { width: 1em; height: 1em; flex-shrink: 0; }
   .map__card { left: 16px; right: 16px; bottom: 16px; }
 
   .footer__top { grid-template-columns: 1fr; gap: 40px; }
+  .wa-float { right: 16px; bottom: 16px; height: 56px; padding: 0 15px; }
 
   .lightbox__prev, .lightbox__next { top: auto; bottom: 24px; transform: none; }
   .lightbox__prev { left: calc(50% - 64px); }
@@ -841,7 +872,7 @@ svg { width: 1em; height: 1em; flex-shrink: 0; }
     transition-duration: .01ms !important;
     transition-delay: 0s !important;
   }
-  .hero__anim, .hero__line > span, .reveal, .seal { opacity: 1; transform: none; }
+  .hero__anim, .hero__line > span, .reveal, .seal, .wa-float { opacity: 1; transform: none; }
   .hero__img img { transform: none; }
   .seal__text { animation: none; }
 }
